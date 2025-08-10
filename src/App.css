@@ -1,0 +1,137 @@
+/* General Page Layout */
+.projects-page {
+  padding: 20px;
+  text-align: center;
+}
+
+.page-title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+/* Project Grid */
+.grid-projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+/* Project Card */
+.project-card {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.project-title {
+  font-size: 1.25rem;
+  margin-bottom: 10px;
+}
+
+.project-desc {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Skills Tags */
+.skills {
+  margin: 10px 0;
+}
+
+.skill-tag {
+  display: inline-block;
+  background-color: #f4f4f4;
+  border-radius: 5px;
+  padding: 5px 10px;
+  margin: 5px;
+  font-size: 0.9rem;
+  color: #333;
+}
+
+/* Project Links */
+.project-links {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+/* Buttons */
+.btn {
+  text-decoration: none;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+}
+
+.btn-github {
+  background-color: #333;
+}
+
+.btn-github:hover {
+  background-color: #000;
+}
+
+.btn-live {
+  background-color: #007bff;
+}
+
+.btn-live:hover {
+  background-color: #0056b3;
+}
+
+.btn-back {
+  background-color: #28a745;
+}
+
+.btn-back:hover {
+  background-color: #1e7e34;
+}
+
+/* Back Button Container */
+.back-home {
+  margin-top: 30px;
+}
+
+.quick-info-box {
+  border: 2px solid transparent;
+  background-image: linear-gradient(180deg,#061428,#081226), 
+                    linear-gradient(90deg,#06b6d4,#3b82f6,#06b6d4);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+}
+
+.quick-info-box:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 15px rgba(6,182,212,0.5);
+}
+
+/* Responsive Styling */
+@media (max-width: 600px) {
+  .page-title {
+    font-size: 1.5rem;
+  }
+
+  .project-card {
+    padding: 15px;
+  }
+
+  .btn {
+    padding: 6px 10px;
+    font-size: 0.85rem;
+  }
+}

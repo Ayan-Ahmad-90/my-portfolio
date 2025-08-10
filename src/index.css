@@ -1,0 +1,82 @@
+/* src/index.css */
+
+/* Tailwind CSS imports (if using Tailwind) */
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */
+
+/* Fallback styles if Tailwind is not used */
+:root {
+  --accent: #06b6d4;
+  --bg: #0b1220;
+  --card: #071426;
+  --muted: #9aa7b9;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, system-ui, "Segoe UI", Roboto, Arial, sans-serif;
+  background: linear-gradient(180deg, #071021, #061227);
+  color: #e6eef8;
+}
+
+/* Links */
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Buttons */
+.btn-primary {
+  background: var(--accent);
+  color: white;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  background: #0ca7c7;
+}
+
+.btn-ghost {
+  background: rgba(255, 255, 255, 0.02);
+  border: none;
+  border-radius: 8px;
+  padding: 8px 10px;
+  cursor: pointer;
+  color: #cbd5e1;
+}
+
+.btn-ghost:hover {
+  background: rgba(255, 255, 255, 0.06);
+}
+
+/* Input, textarea styles */
+input, textarea {
+  background: rgba(255, 255, 255, 0.02);
+  border: none;
+  border-radius: 8px;
+  padding: 8px;
+  color: #e6eef8;
+  font-size: 14px;
+  resize: vertical;
+}
+
+input::placeholder, textarea::placeholder {
+  color: #94a3b8;
+}
+
+/* Scrollbar for textarea (optional) */
+textarea {
+  font-family: inherit;
+}
