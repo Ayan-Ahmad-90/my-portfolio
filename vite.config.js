@@ -2,9 +2,6 @@ import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
 export default defineConfig({
-    base: '/my-portfolio/',  // Keep this uncommented
-    plugins: [react()],
-    build: {
-        outDir: 'dist'  // Explicitly set output directory
-    }
+  base: '/my-portfolio/', // यहाँ अपने repo का नाम डालें
+  plugins: [react()],
 })
