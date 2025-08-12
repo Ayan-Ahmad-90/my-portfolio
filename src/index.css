@@ -1,9 +1,9 @@
 /* src/index.css */
 
 /* Tailwind CSS imports (if using Tailwind) */
-/* @tailwind base;
+@tailwind base;
 @tailwind components;
-@tailwind utilities; */
+@tailwind utilities;
 
 /* Fallback styles if Tailwind is not used */
 :root {
