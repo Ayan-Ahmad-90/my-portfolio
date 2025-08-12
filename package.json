@@ -5,12 +5,15 @@
   "homepage": "https://Ayan-Ahmad-90.github.io/my-portfolio",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "lint": "eslint .",
-    "preview": "vite preview",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d bist"
+    "scripts": {
+  "dev": "vite",
+  "build": "vite build",
+  "lint": "eslint .",
+  "preview": "vite preview",
+  "predeploy": "npm run build",
+  "deploy": "gh-pages -d dist"
+}
+
   },
   "dependencies": {
     "bootstrap": "^5.3.7",
